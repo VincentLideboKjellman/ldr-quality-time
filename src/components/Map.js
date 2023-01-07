@@ -33,7 +33,7 @@ function Map() {
             pov: panoRef.current.getPov()
           });
         }}
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=INSERT_KEY`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY}`}
       >
         <StreetViewPanorama
           ref={panoRef}
